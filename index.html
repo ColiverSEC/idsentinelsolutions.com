@@ -7,61 +7,143 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Dark Mode Toggle -->
-  <button id="theme-toggle">🌙</button>
 
-  <!-- Hero Section -->
-  <header class="hero fade-in">
-    <h1>ID Sentinel Solutions</h1>
-    <p>Practical IAM Labs for Recruiters, Employers & Security Professionals</p>
-    <div class="cta-buttons">
-      <a href="#projects" class="btn">View Labs</a>
-      <a href="resume.pdf" class="btn-outline">Download Resume</a>
-    </div>
-  </header>
+<!-- Navigation + Dark Mode -->
+<nav class="top-nav">
+  <div class="nav-left">
+    <ul id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Labs</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-right">
+    <button id="theme-toggle">🌙</button>
+    <button class="hamburger" id="hamburger-btn">☰</button>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero fade-in">
+  <h1>ID Sentinel Solutions</h1>
+  <p class="hero-subtitle">Practical IAM Labs for Recruiters, Employers & Security Professionals</p>
+  <p class="hero-tagline">Follow-along labs to master identity, access, and Microsoft 365 security tools.</p>
+</header>
 
   <!-- Featured Projects -->
   <section id="projects" class="projects fade-in">
-    <h2>Featured Labs</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Enterprise IAM Lab</h3>
-        <p>Hands-on lab covering Entra ID, Okta, AD, and federation protocols.</p>
-        <a href="https://github.com/ColiverSEC/Enterprise-IAM-Lab" target="_blank">View on GitHub</a>
-      </div>
-      <div class="card">
-        <h3>Microsoft Entra ID</h3>
-        <p>Hybrid identity, Conditional Access, PowerShell automation.</p>
-        <a href="./entra/">Explore</a>
-      </div>
-      <div class="card">
-        <h3>Okta</h3>
-        <p>App integrations, MFA policies, lifecycle automation.</p>
-        <a href="./okta/">Explore</a>
-      </div>
-      <div class="card">
-        <h3>Active Directory</h3>
-        <p>OU/GPO management, user/group delegation.</p>
-        <a href="./activedirectory/">Explore</a>
-      </div>
+  <h2>Featured Labs</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Enterprise IAM Lab</h3>
+      <p>Hands-on identity and access management (IAM) lab focused on Microsoft Entra ID, Okta, on-prem Active Directory, automation and identity federation protocols including SAML, SCIM, OAuth 2.0, and OpenID Connect.</p>
+      <details>
+        <summary>View Modules</summary>
+        <ul>
+          <li><a href="./entra/">Microsoft Entra ID</a></li>
+          <li><a href="./okta/">Okta</a></li>
+          <li><a href="./activedirectory/">Active Directory (On-Prem)</a></li>
+          <li><a href="./federation-protocols/">Federation Protocols</a></li>
+          <li><a href="./secure-access/">Secure Access Controls</a></li>
+          <li><a href="./automation/">Automation</a></li>
+          <li><a href="./real-world-tasks.md">Real-World Tasks</a></li>
+        </ul>
+      </details>
+      <a href="https://github.com/ColiverSEC/Enterprise-IAM-Lab" target="_blank">View on GitHub</a>
     </div>
-  </section>
+
+    <div class="card">
+      <h3>Microsoft 365 Security & Compliance Lab</h3>
+      <p>Hands-on labs covering Microsoft 365 Security and Compliance tools including Microsoft Purview, Microsoft Defender, and Intune. Focused on real-world identity protection, data governance, and device management scenarios.</p>
+      <details>
+        <summary>View Modules</summary>
+        <ul>
+          <li>Defender Security Policies</li>
+          <li>Purview Data Protection</li>
+          <li>Intune Device Management</li>
+          <!-- Add more modules as needed -->
+        </ul>
+      </details>
+      <a href="https://github.com/ColiverSEC/Microsoft-365-Security-Lab" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+</section>
+
 
   <!-- About Section -->
-  <section id="about" class="about fade-in">
-    <h2>About Me</h2>
-    <p>
-      I’m an IAM Engineer with 4 years’ hands-on experience in Entra ID, Okta, Active Directory, 
-      and automation. I design and implement secure identity solutions that balance usability with compliance.
-    </p>
-    <ul>
-      <li>Microsoft Entra ID (Azure AD)</li>
-      <li>Okta Identity Cloud</li>
-      <li>Active Directory & GPOs</li>
-      <li>Federation Protocols (SAML, OAuth, OIDC, SCIM)</li>
-      <li>Automation (PowerShell, Okta Workflows)</li>
-    </ul>
-  </section>
+<section id="about" class="about fade-in">
+  <h2>About Me</h2>
+  <p>
+    I’m an IAM Engineer with 4 years’ hands-on experience in Microsoft Entra ID, Okta, Active Directory, 
+    and identity automation. I design and implement secure identity solutions that balance usability with compliance.
+  </p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills fade-in">
+  <h2>Core Skills</h2>
+  
+  <div class="skills-grid">
+
+    <!-- Identity Platforms -->
+    <div class="skill-card">
+      <i class="fab fa-microsoft fa-2x"></i>
+      <h3>Microsoft Entra ID</h3>
+      <p>Azure AD, Hybrid Identity, Conditional Access</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-lock fa-2x"></i>
+      <h3>Okta Identity Cloud</h3>
+      <p>SAML/OIDC, MFA, Lifecycle Automation</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-network-wired fa-2x"></i>
+      <h3>Active Directory</h3>
+      <p>OU/GPO Management, Delegation, User & Group Management</p>
+    </div>
+
+    <!-- Protocols & Integrations -->
+    <div class="skill-card">
+      <i class="fas fa-shield-alt fa-2x"></i>
+      <h3>Protocols</h3>
+      <p>SAML, OAuth 2.0, OpenID Connect, API Integrations</p>
+    </div>
+
+    <!-- Automation & Security -->
+    <div class="skill-card">
+      <i class="fas fa-terminal fa-2x"></i>
+      <h3>Automation</h3>
+      <p>PowerShell, Okta Workflows</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-user-shield fa-2x"></i>
+      <h3>Security</h3>
+      <p>MFA, Conditional Access, RBAC, Least Privilege</p>
+    </div>
+
+    <!-- Governance & Compliance -->
+    <div class="skill-card">
+      <i class="fas fa-file-alt fa-2x"></i>
+      <h3>Governance</h3>
+      <p>Access Reviews, PAM, Logging & Audit, GDPR/HIPAA</p>
+    </div>
+
+    <!-- Cloud Security & Compliance -->
+     <div class="skill-card">
+      <i class="fas fa-file-alt fa-2x"></i>
+      <h3>Cloud Security</h3>
+      <p>Microsoft Purview, Defender for Cloud Apps, DLP, Sensitivity Labels, Compliance Reporting</p>
+     </div>
+  </div>
+</section>
+
+
 
   <!-- Contact Section -->
   <footer class="contact fade-in">

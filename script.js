@@ -1,7 +1,14 @@
 // Dark mode toggle with persistence
 const toggleBtn = document.getElementById("theme-toggle");
+const hamburgerBtn = document.getElementById("hamburger-btn");
+const navLinks = document.getElementById("nav-links");
 
-// Load saved theme from localStorage
+// Hamburger toggle
+hamburgerBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+// Dark mode toggle
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
   toggleBtn.textContent = "☀️";
@@ -19,3 +26,4 @@ toggleBtn.addEventListener("click", () => {
     toggleBtn.textContent = "🌙";
   }
 });
+
