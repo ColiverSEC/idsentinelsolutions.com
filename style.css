@@ -117,28 +117,15 @@ body.dark .contact { background: #000; }
 }
 
 
-/* Mobile layout */
+/* Mobile menu */
 @media (max-width: 768px) {
-
-  /* Hamburger button on the left */
   .hamburger {
-    display: block;
-    position: fixed;      /* relative to viewport */
-    top: 2px;            /* distance from top */
-    left: 15px;           /* move to left side */
-    font-size: 1.8rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #3b82f6;
-    z-index: 3000;
+    display: block;   /* show hamburger on mobile */
   }
-
-  /* Push nav links down to avoid overlap with hamburger */
   .nav-left ul {
     display: none;
     position: fixed;
-    top: 60px;           /* leave space below hamburger */
+    top: 50px;
     left: 0;
     flex-direction: column;
     background: #fff;
@@ -152,34 +139,7 @@ body.dark .contact { background: #000; }
   .nav-left ul.show {
     display: flex;
   }
-
-  /* Keep theme toggle on right */
-  .nav-right {
-    position: fixed;      /* fix to viewport */
-    top: 15px;
-    right: 15px;
-    z-index: 3000;
-  }
 }
-
-/* Mobile-only theme toggle matching hamburger size */
-@media (max-width: 768px) {
-  #theme-toggle {
-    top: 2px;               /* same vertical alignment as hamburger */
-    right: 15px;             /* same horizontal distance from edge */
-    padding: 0;              /* remove extra padding */
-    font-size: 1.8rem;       /* match hamburger icon size */
-    width: 36px;             /* match hamburger touch area */
-    height: 36px;            /* match hamburger touch area */
-    border-radius: 0;        /* square/circle as desired */
-    display: flex;           /* center icon/text */
-    align-items: center;
-    justify-content: center;
-    background: #3b82f6;     /* keep button color */
-    color: #fff;
-  }
-}
-
 
 /* Hero Section */
 .hero {
