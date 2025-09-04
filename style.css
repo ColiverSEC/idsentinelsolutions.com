@@ -161,6 +161,17 @@ body.dark .contact { background: #000; }
     z-index: 3000;
   }
 }
+/* Mobile-specific theme toggle */
+@media (max-width: 768px) {
+  #theme-toggle {
+    top: 2px;         /* aligns with where hamburger would be */
+    right: 60px;      /* move slightly left if needed to match hamburger spacing */
+    padding: 0.3rem 0.8rem;  /* smaller for mobile */
+    font-size: 1.4rem;       /* slightly smaller text */
+    border-radius: 15px;     /* optional: a bit smaller */
+  }
+}
+
 
 
 
