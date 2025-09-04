@@ -163,18 +163,24 @@ body.dark .contact { background: #000; }
 }
 
 /* Mobile-only theme toggle matching hamburger size */
+/* Mobile-only theme toggle matching hamburger size */
 @media (max-width: 768px) {
   #theme-toggle {
-    top: 2px;               /* same as hamburger */
-    right: 15px;             /* distance from right edge */
+    top: 2px;               /* same vertical alignment as hamburger */
+    right: 15px;             /* same horizontal distance from edge */
     padding: 0;              /* remove extra padding */
-    font-size: 1.8rem;       /* same as hamburger icon */
-    border-radius: 0;        /* optional: match hamburger look */
-    height: 36px;            /* match hamburger touch area if needed */
-    width: 36px;             /* match hamburger touch area if needed */
-    display: flex;           /* center content if using an icon */
+    font-size: 1.8rem;       /* match hamburger icon size */
+    width: 36px;             /* match hamburger touch area */
+    height: 36px;            /* match hamburger touch area */
+    border-radius: 0;        /* square/circle as desired */
+    display: flex;           /* center icon/text */
     align-items: center;
     justify-content: center;
+    background: #3b82f6;     /* keep button color */
+    color: #fff;
+  }
+}
+
   }
 }
 
