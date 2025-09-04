@@ -107,27 +107,30 @@ body.dark .contact { background: #000; }
 /* Hamburger button (hidden on desktop) */
 .hamburger {
   display: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;       /* bigger and easier to tap */
   background: none;
   border: none;
   cursor: pointer;
   color: #3b82f6;
+  z-index: 3000;           /* make sure it’s above nav and menu */
+  position: relative;       /* needed for z-index to work */
 }
+
 
 /* Mobile menu */
 @media (max-width: 768px) {
   .nav-left ul {
     display: none;
-    position: fixed; /* changed from absolute */
-    top: 60px;       /* just below the nav */
-    left: 10px;      /* small margin from left edge */
+    position: fixed;
+    top: 50px;            /* slightly lower than nav */
+    left: 0;
     flex-direction: column;
     background: #fff;
     padding: 1rem;
-    border-radius: 8px;
-    width: 200px;    /* slightly wider for readability */
+    border-radius: 0 0 8px 8px;
+    width: 100%;           /* full width makes it more obvious */
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    z-index: 2000;   /* ensures it appears above nav */
+    z-index: 2000;
   }
 
   .nav-left ul.show {
