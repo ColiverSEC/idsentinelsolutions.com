@@ -117,12 +117,14 @@ body.dark .contact { background: #000; }
 }
 
 
-/* Mobile menu */
+/* Mobile layout */
 @media (max-width: 768px) {
+
+  /* Hamburger button on the left */
   .hamburger {
-    display: block;       /* show hamburger on mobile */
-    position: fixed;      /* place it relative to viewport */
-    top: 15px;            /* distance from top */
+    display: block;
+    position: fixed;      /* relative to viewport */
+    top: 2px;            /* distance from top */
     left: 15px;           /* move to left side */
     font-size: 1.8rem;
     background: none;
@@ -132,10 +134,11 @@ body.dark .contact { background: #000; }
     z-index: 3000;
   }
 
+  /* Push nav links down to avoid overlap with hamburger */
   .nav-left ul {
     display: none;
     position: fixed;
-    top: 50px;
+    top: 60px;           /* leave space below hamburger */
     left: 0;
     flex-direction: column;
     background: #fff;
@@ -149,7 +152,16 @@ body.dark .contact { background: #000; }
   .nav-left ul.show {
     display: flex;
   }
+
+  /* Keep theme toggle on right */
+  .nav-right {
+    position: fixed;      /* fix to viewport */
+    top: 15px;
+    right: 15px;
+    z-index: 3000;
+  }
 }
+
 
 
 /* Hero Section */
