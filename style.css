@@ -119,16 +119,20 @@ body.dark .contact { background: #000; }
 
 /* Mobile menu */
 @media (max-width: 768px) {
+  .hamburger {
+    display: block;   /* show hamburger on mobile */
+  }
+
   .nav-left ul {
     display: none;
     position: fixed;
-    top: 50px;            /* slightly lower than nav */
+    top: 50px;
     left: 0;
     flex-direction: column;
     background: #fff;
     padding: 1rem;
     border-radius: 0 0 8px 8px;
-    width: 100%;           /* full width makes it more obvious */
+    width: 100%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     z-index: 2000;
   }
@@ -136,12 +140,7 @@ body.dark .contact { background: #000; }
   .nav-left ul.show {
     display: flex;
   }
-
-  .hamburger {
-    display: block;
-  }
 }
-
 
 /* Hero Section */
 .hero {
