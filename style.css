@@ -126,7 +126,7 @@ body.dark .contact { background: #000; }
     display: none;
     position: fixed;
     top: 50px;
-    left: 0;
+    left: 15;
     flex-direction: column;
     background: #fff;
     padding: 1rem;
