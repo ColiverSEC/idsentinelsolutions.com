@@ -163,7 +163,6 @@ body.dark .contact { background: #000; }
 }
 
 /* Mobile-only theme toggle matching hamburger size */
-/* Mobile-only theme toggle matching hamburger size */
 @media (max-width: 768px) {
   #theme-toggle {
     top: 2px;               /* same vertical alignment as hamburger */
@@ -181,8 +180,6 @@ body.dark .contact { background: #000; }
   }
 }
 
-  }
-}
 
 /* Hero Section */
 .hero {
