@@ -21,6 +21,19 @@ body.dark {
 
 body.dark .hero { background: linear-gradient(135deg, #111827, #1f2937); }
 body.dark .card, body.dark .skill-card { background: #1f2937; color: #f9fafb; }
+body.dark .skill-card p {
+  color: #d1d5db; /* light gray for readability */
+}
+
+body.dark section h2 {
+  color: #f9fafb; /* section headers readable in dark mode */
+}
+
+/* Optional: lighten skill icons a bit */
+body.dark .skill-card i {
+  color: #60a5fa;
+}
+
 body.dark .about { background: #1f2937; }
 body.dark .contact { background: #000; }
 
@@ -59,6 +72,7 @@ body.dark .contact { background: #000; }
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
 
 /* Left side: nav links */
 .nav-left ul {
@@ -104,23 +118,27 @@ body.dark .contact { background: #000; }
 @media (max-width: 768px) {
   .nav-left ul {
     display: none;
-    position: absolute;
-    top: 60px;
-    left: 1rem;
+    position: fixed; /* changed from absolute */
+    top: 60px;       /* just below the nav */
+    left: 10px;      /* small margin from left edge */
     flex-direction: column;
     background: #fff;
     padding: 1rem;
     border-radius: 8px;
-    width: 180px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 200px;    /* slightly wider for readability */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 2000;   /* ensures it appears above nav */
   }
+
   .nav-left ul.show {
     display: flex;
   }
+
   .hamburger {
     display: block;
   }
 }
+
 
 /* Hero Section */
 .hero {
