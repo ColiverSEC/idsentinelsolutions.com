@@ -116,20 +116,27 @@ body.dark .contact { background: #000; }
   position: relative;       /* needed for z-index to work */
 }
 
-
 /* Mobile menu */
 @media (max-width: 768px) {
   .hamburger {
-    display: block;   
-    position: fixed;      /* relative to viewport */
-    top: 2px;             /* keep same vertical alignment as toggle */
-    left: 15px;           /* shift to left side of screen */
-    font-size: 1.8rem;
-    background: none;
-    border: none;
+    display: flex;          /* show and center content */
+    position: fixed;        /* relative to viewport */
+    top: 2px;               /* same vertical alignment as toggle */
+    left: 15px;             /* shift to left side of screen */
+    font-size: 1.2rem;      /* match toggle size */
+    padding: 0.4rem 1rem;   /* match toggle padding */
+    border-radius: 20px;    /* match toggle */
+    background: #3b82f6;    /* match toggle */
+    color: #fff;            /* icon color */
     cursor: pointer;
-    color: #3b82f6;
-    z-index: 3000;
+    z-index: 3000;          /* on top of nav */
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  .hamburger:hover {
+    background: #2563eb;    /* match toggle hover */
   }
 
   .nav-left ul {
