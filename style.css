@@ -120,13 +120,23 @@ body.dark .contact { background: #000; }
 /* Mobile menu */
 @media (max-width: 768px) {
   .hamburger {
-    display: block;   /* show hamburger on mobile */
+    display: block;   
+    position: fixed;      /* relative to viewport */
+    top: 2px;             /* keep same vertical alignment as toggle */
+    left: 15px;           /* shift to left side of screen */
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #3b82f6;
+    z-index: 3000;
   }
+
   .nav-left ul {
     display: none;
     position: fixed;
     top: 50px;
-    left: 15;
+    left: 0;               /* leave at 0 so menu stretches full width */
     flex-direction: column;
     background: #fff;
     padding: 1rem;
@@ -140,6 +150,7 @@ body.dark .contact { background: #000; }
     display: flex;
   }
 }
+
 
 /* Hero Section */
 .hero {
