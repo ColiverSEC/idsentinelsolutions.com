@@ -1,14 +1,27 @@
-// Dark mode toggle with persistence
+// Grab elements
 const toggleBtn = document.getElementById("theme-toggle");
 const hamburgerBtn = document.getElementById("hamburger-btn");
 const navLinks = document.getElementById("nav-links");
 
+// ===================
 // Hamburger toggle
+// ===================
 hamburgerBtn.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
 
+// Collapse menu when clicking a link (mobile only)
+document.querySelectorAll("#nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {   // only collapse on mobile
+      navLinks.classList.remove("show");
+    }
+  });
+});
+
+// ===================
 // Dark mode toggle
+// ===================
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
   toggleBtn.textContent = "☀️";
@@ -26,4 +39,3 @@ toggleBtn.addEventListener("click", () => {
     toggleBtn.textContent = "🌙";
   }
 });
-

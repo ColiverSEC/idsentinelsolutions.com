@@ -88,7 +88,7 @@ body.dark .contact { background: #000; }
   padding: 0.5rem 0.9rem;
   border-radius: 6px;
   background: #3b82f6;
-  color: #fff;
+  color: #ffffff;
   font-size: 0.9rem;
   transition: 0.3s;
 }
@@ -163,6 +163,13 @@ body.dark .contact { background: #000; }
 
   .nav-left ul.show {
     display: flex;
+  }
+  .nav-left ul li {
+    margin-bottom: 0.30rem; /* adjust value for more or less space */
+  }
+
+  .nav-left ul li:last-child {
+    margin-bottom: 0; /* prevents extra gap at bottom */
   }
 }
 
