@@ -57,6 +57,39 @@ body.dark .contact { background: #000; }
   background: #2563eb;
 }
 
+/* Dark mode for top nav */
+body.dark .top-nav {
+  background: #1f2937;  /* match other dark sections */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5); /* optional: slightly darker shadow for contrast */
+}
+
+body.dark .top-nav .nav-left li a {
+  background: #3b82f6;  /* links stay blue */
+  color: #fff;
+}
+
+body.dark .top-nav .nav-left li a:hover {
+  background: #2563eb;
+}
+
+body.dark .top-nav #theme-toggle {
+  background: #3b82f6;
+  color: #fff;
+}
+
+body.dark .top-nav #theme-toggle:hover {
+  background: #2563eb;
+}
+
+body.dark .hamburger {
+  background: #3b82f6;
+  color: #fff;
+}
+
+body.dark .hamburger:hover {
+  background: #2563eb;
+}
+
 
 /* Top Navigation */
 .top-nav {
@@ -173,6 +206,19 @@ body.dark .contact { background: #000; }
   }
 }
 
+ /* ← ADD THE DARK MODE RULES HERE */
+  body.dark .nav-left ul {
+    background: #1f2937;
+  }
+
+  body.dark .nav-left ul li a {
+    background: #3b82f6;
+    color: #fff;
+  }
+
+  body.dark .nav-left ul li a:hover {
+    background: #2563eb;
+  }
 
 /* Make top nav taller on mobile */
 @media (max-width: 768px) {
