@@ -42,7 +42,7 @@ body.dark .contact { background: #000; }
   position: fixed;       /* stays at top-right */
   top: 2px;              /* slightly up */
   right: 15px;           /* distance from right edge */
-  padding: 0.4rem 1rem;  /* size of button */
+  padding: 0.4rem 0.8rem;  /* size of button */
   border: none;
   border-radius: 20px;
   background: #3b82f6;
@@ -116,34 +116,42 @@ body.dark .contact { background: #000; }
   position: relative;       /* needed for z-index to work */
 }
 
-/* Mobile menu */
+/* Mobile menu adjustments */
 @media (max-width: 768px) {
+
+  /* Hamburger button */
   .hamburger {
-    display: flex;          /* show and center content */
-    position: fixed;        /* relative to viewport */
-    top: 2px;               /* same vertical alignment as toggle */
-    left: 15px;             /* shift to left side of screen */
-    font-size: 1.2rem;      /* match toggle size */
-    padding: 0.4rem 1rem;   /* match toggle padding */
-    border-radius: 20px;    /* match toggle */
-    background: #3b82f6;    /* match toggle */
-    color: #fff;            /* icon color */
+    display: flex;
+    position: fixed;
+    top: 12px;          /* move it down into the nav bar */
+    left: 15px;
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    background: #3b82f6;
+    color: #fff;
     cursor: pointer;
-    z-index: 3000;          /* on top of nav */
+    z-index: 3000;
     align-items: center;
     justify-content: center;
     border: none;
   }
 
   .hamburger:hover {
-    background: #2563eb;    /* match toggle hover */
+    background: #2563eb;
+  }
+
+  /* Dark mode toggle button on mobile only */
+  #theme-toggle {
+    top: 12px;          /* same vertical alignment as hamburger */
+    right: 15px;        /* keep distance from right edge */
   }
 
   .nav-left ul {
     display: none;
     position: fixed;
-    top: 50px;
-    left: 0;               /* leave at 0 so menu stretches full width */
+    top: 50px;          /* keep below nav */
+    left: 0;
     flex-direction: column;
     background: #fff;
     padding: 1rem;
@@ -155,6 +163,24 @@ body.dark .contact { background: #000; }
 
   .nav-left ul.show {
     display: flex;
+  }
+}
+
+
+/* Make top nav taller on mobile */
+@media (max-width: 768px) {
+  .top-nav {
+    padding: 1rem 1rem;   /* increase top/bottom padding */
+    min-height: 43px;     /* optional: ensures consistent height */
+  }
+
+  /* Optional: slightly adjust toggle and hamburger positions if needed */
+  #theme-toggle {
+    top: 2px;            /* nudges toggle down to sit nicely in taller nav */
+  }
+
+  .hamburger {
+    top: 2px;            /* same for hamburger */
   }
 }
 
