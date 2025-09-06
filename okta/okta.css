@@ -128,3 +128,17 @@ body.dark .about#overview {
 body.dark .about#overview a {
   color: #60a5fa;        /* links stay visible in dark mode */
 }
+/* Dark mode: all links in Entra Lab page sections */
+body.dark .breadcrumb a,
+body.dark .projects .card a,
+body.dark .about a,
+body.dark .contact a {
+  color: #60a5fa; /* lighter blue for readability */
+}
+
+body.dark .breadcrumb a:hover,
+body.dark .projects .card a:hover,
+body.dark .about a:hover,
+body.dark .contact a:hover {
+  color: #3b82f6; /* darker blue on hover */
+}
