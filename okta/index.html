@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Okta IAM Lab | ID Sentinel Solutions</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="okta.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <ul id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../#projects">Labs</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#skills">Skills</a></li>
+        <li><a href="../#contact">Contact</a></li>
+        <li><a href="Cleveland_Oliver_IAM_Security_Engineer (1).pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <button id="theme-toggle">🌙</button>
+      <button class="hamburger" id="hamburger-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero fade-in">
+    <img src="../logo.PNG" alt="ID Sentinel Solutions Logo" class="hero-logo">
+    <h1>Okta IAM Lab</h1>
+    <p class="hero-subtitle">Cloud Identity Provisioning | MFA | Automation</p>
+    <!-- scroll arrow -->
+    <a href="#okta-content" class="scroll-down">&#x2193;</a>
+  </header>
+
+<main id="okta-content">
+  <!-- Breadcrumb / Back link -->
+  <div class="breadcrumb">
+    <p><a href="../index.html#projects">⬅ Back to Enterprise IAM Lab Overview</a></p>
+  </div>
+
+  <!-- Overview -->
+  <section id="overview" class="about fade-in">
+    <h2>Overview</h2>
+    <p>
+      This module covers identity and access management using <strong>Okta</strong>, a leading cloud identity provider. 
+      It provides hands-on guidance to integrate applications with Okta via SAML and OIDC, configure Multi-Factor Authentication (MFA) policies, 
+      and automate user lifecycle management including provisioning and deprovisioning.
+    </p>
+  </section>
+
+  <!-- What This Covers -->
+  <section class="skills fade-in">
+    <h2>📚 What This Covers</h2>
+    <div class="skills-grid">
+      <div class="card">Application integration with Okta using SAML 2.0 and OpenID Connect (OIDC)</div>
+      <div class="card">Setting up Single Sign-On (SSO) and Just-in-Time (JIT) provisioning</div>
+      <div class="card">Enabling and enforcing Multi-Factor Authentication (MFA) with custom policies</div>
+      <div class="card">Automating lifecycle management through provisioning, deactivation, and workflows</div>
+    </div>
+  </section>
+
+  <!-- Lab Sections -->
+  <section class="projects fade-in">
+    <h2>📁 Lab Sections</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>App Integration</h3>
+        <p>Add and configure apps in Okta. Set up SAML or OIDC connections, assign users/groups, and test seamless SSO.</p>
+        <a href="./app-integration.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>MFA Policies</h3>
+        <p>Enable user factor enrollment, create and customize authentication policies, assign policies to users/groups/apps, and verify MFA enforcement.</p>
+        <a href="./mfa-policies.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Lifecycle Management</h3>
+        <p>Enable provisioning/deprovisioning for connected apps, map user attributes, and build Okta Workflows to automate notifications and lifecycle actions.</p>
+        <a href="./lifecycle-management.md" target="_blank">View Walkthrough</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Used -->
+  <section class="tools fade-in">
+    <h2>🛠 Tools Used</h2>
+    <div class="tools-grid">
+      <div class="card">Okta Admin Console</div>
+      <div class="card">Okta Workflows</div>
+      <div class="card">SAML 2.0 / OIDC-compatible apps (e.g., GitHub, demo apps)</div>
+      <div class="card">Browser with incognito mode for testing</div>
+    </div>
+  </section>
+
+  <!-- Related Labs -->
+  <section class="about fade-in">
+    <h2>🔗 Related Labs</h2>
+    <p>
+      <a href="../entra/README.md">Microsoft Entra ID Lab</a> – Cloud identity and access management with Azure AD<br>
+      <a href="https://github.com/ColiverSEC/AD-Entra-Hybrid-Lab/blob/main/README.md">AD-Entra-Hybrid-Lab</a> – On-premises domain, group management and cloud sync<br>
+      <a href="../federation-protocols/README.md">Federation Protocols</a> – Deep dive into SAML, SCIM, OAuth, and OpenID Connect
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="contact fade-in">
+    <h2>Contact</h2>
+    <ul>
+      <li><a href="mailto:dolivernetwork@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/cleveland-oliver-iamsecurity/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/ColiverSEC" target="_blank">GitHub</a></li>
+    </ul>
+  </footer>
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>
