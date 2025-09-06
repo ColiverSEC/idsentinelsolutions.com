@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft Entra ID Lab | ID Sentinel Solutions</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="entra.css">
+  
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <ul id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../#projects">Labs</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#skills">Skills</a></li>
+        <li><a href="../#contact">Contact</a></li>
+        <li><a href="Cleveland_Oliver_IAM_Security_Engineer (1).pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <button id="theme-toggle">🌙</button>
+      <button class="hamburger" id="hamburger-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+<header class="hero fade-in">
+  <img src="../logo.PNG" alt="ID Sentinel Solutions Logo" class="hero-logo">
+  <h1>Microsoft Entra ID Lab</h1>
+  <p class="hero-subtitle">Cloud & Hybrid Identity Provisioning | Conditional Access | Automation</p>
+  <!-- scroll arrow -->
+  <a href="#entra-content" class="scroll-down">&#x2193;</a>
+</header>
+
+<main id="entra-content">
+  <!-- content goes here -->
+</main>
+
+
+<!-- Breadcrumb / Back link -->
+<div class="breadcrumb">
+  <p><a href="../index.html#projects">⬅ Back to Enterprise IAM Lab Overview</a></p>
+</div>
+
+  <!-- Overview -->
+<section id="overview" class="about fade-in">
+  <h2>Overview</h2>
+  <p>
+    This module simulates cloud identity provisioning and access management using <strong>Microsoft Entra ID</strong> (formerly Azure AD). 
+    It includes hands-on demonstrations of cloud-only user creation, hybrid sync from on-prem Active Directory, group-based license assignment, 
+    and Conditional Access policies.
+  </p>
+</section>
+
+  <!-- What This Covers -->
+<section class="skills fade-in">
+  <h2>📚 What This Covers</h2>
+  <div class="skills-grid">
+    <div class="card">Cloud-only user creation (manual, CSV, PowerShell)</div>
+    <div class="card">Hybrid identity provisioning from on-prem AD via Entra ID Connect</div>
+    <div class="card">Group-based license assignment</div>
+    <div class="card">Conditional Access enforcement (MFA, device-based policies)</div>
+  </div>
+</section>
+
+  <!-- Lab Sections -->
+  <section class="projects fade-in">
+    <h2>📁 Lab Sections</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>User Provisioning</h3>
+        <p>Create users manually, in bulk via CSV, or with PowerShell. Sync identities from AD via Entra Connect and automate license assignment.</p>
+        <a href="https://github.com/ColiverSEC/Enterprise-IAM-Lab/blob/main/entra/user-provisioning.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Hybrid Identity</h3>
+        <p>Install and configure Azure AD Connect, set OU filtering, verify sync, and enable password hash sync.</p>
+        <a href="https://github.com/ColiverSEC/Enterprise-IAM-Lab/blob/main/entra/hybrid-identity.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Conditional Access</h3>
+        <p>Configure policies to enforce MFA, block legacy authentication, and require compliant devices.</p>
+        <a href="https://github.com/ColiverSEC/Enterprise-IAM-Lab/blob/main/entra/conditional_access.md" target="_blank">View Walkthrough</a>
+      </div>
+    </div>
+  </section>
+
+<!-- Tools Used -->
+<section class="tools fade-in">
+  <h2>🛠 Tools Used</h2>
+  <div class="tools-grid">
+    <div class="card"><strong>Admin Portals:</strong> Microsoft Entra Admin Center, Microsoft 365 Admin Center</div>
+    <div class="card"><strong>Command-line & Scripting:</strong> PowerShell (AzureAD & MSOnline modules)</div>
+    <div class="card"><strong>Infrastructure:</strong> Azure AD Connect, On-Prem Windows Server (Hyper-V or VirtualBox)</div>
+  </div>
+</section>
+
+ <!-- Related Labs -->
+<section class="about fade-in">
+  <h2>🔗 Related Labs</h2>
+  <p>This lab assumes the on-prem AD forest and OU structure covered in the 
+     <a href="../activedirectory/">Active Directory Lab</a>.
+  </p>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="contact fade-in">
+    <h2>Contact</h2>
+    <ul>
+      <li><a href="mailto:dolivernetwork@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/cleveland-oliver-iamsecurity/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/ColiverSEC" target="_blank">GitHub</a></li>
+    </ul>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

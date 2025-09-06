@@ -428,14 +428,48 @@ section h2::after {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* About Section */
-.about {
-  padding: 3rem 2rem;
-  background: #e5e7eb;
+/* About Me Section */
+.about#about {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 800px;
+  padding: 2rem 1.5rem;
+  background: #f3f4f6;   /* light card background */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color: #374151;        /* text color for light mode */
 }
 
-.about p { margin-bottom: 1rem; }
-.about ul { list-style: disc; padding-left: 20px; }
+.about#about h2 {
+  margin-bottom: 1rem;
+}
+
+.about#about p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.about#about a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.about#about a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode for About Me Card */
+body.dark .about#about {
+  background: #1f2937;   /* dark card background */
+  color: #f9fafb;        /* light text color */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+body.dark .about#about a {
+  color: #60a5fa;        /* links stay visible in dark mode */
+}
+
+
 
 /* Skills Section */
 .skills-grid {

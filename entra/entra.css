@@ -1,0 +1,130 @@
+/* -------------------------------------------------- */
+/* Entra Page Custom Styles */
+/* -------------------------------------------------- */
+
+/* Breadcrumb */
+.breadcrumb {
+  text-align: center;
+  margin: 1.5rem 0 3rem 0; /* spacing below hero */
+  font-size: 0.95rem;
+}
+
+.breadcrumb a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Cards for sections */
+.skills-grid, .tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.skills-grid .card, .tools-grid .card {
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+  /* Center all content vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fade-in Animation (if not already defined in style.css) */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Headings */
+.skills h2, .tools h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Optional: spacing between cards and sections */
+.skills, .tools {
+  margin-bottom: 3rem;
+}
+
+/* Related Labs */
+.about {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 600px; /* keeps text readable on wide screens */
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.about a:hover {
+  text-decoration: underline;
+}
+
+/* Overview Section */
+.about#overview {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 800px;
+  padding: 2rem 1.5rem;
+  background: #f3f4f6;   /* light card background */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color: #374151;        /* text color for light mode */
+}
+
+.about#overview h2 {
+  margin-bottom: 1rem;
+}
+
+.about#overview p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.about#overview a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.about#overview a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode for Overview */
+body.dark .about#overview {
+  background: #1f2937;   /* dark card background */
+  color: #f9fafb;        /* light text color */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+body.dark .about#overview a {
+  color: #60a5fa;        /* links stay visible in dark mode */
+}
