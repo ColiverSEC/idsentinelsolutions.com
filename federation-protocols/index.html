@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Federation Protocols Lab | ID Sentinel Solutions</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="federation.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <ul id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../#projects">Labs</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#skills">Skills</a></li>
+        <li><a href="../#contact">Contact</a></li>
+        <li><a href="Cleveland_Oliver_IAM_Security_Engineer (1).pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <button id="theme-toggle">🌙</button>
+      <button class="hamburger" id="hamburger-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero fade-in">
+    <img src="../logo.PNG" alt="ID Sentinel Solutions Logo" class="hero-logo">
+    <h1>Federation Protocols Lab</h1>
+    <p class="hero-subtitle">SAML | OAuth 2.0 | OpenID Connect | SCIM</p>
+    <!-- scroll arrow -->
+    <a href="#federation-content" class="scroll-down">&#x2193;</a>
+  </header>
+
+<main id="federation-content">
+  <!-- Breadcrumb / Back link -->
+  <div class="breadcrumb">
+    <p><a href="../index.html#projects">⬅ Back to Enterprise IAM Lab Overview</a></p>
+  </div>
+
+  <!-- Overview -->
+  <section id="overview" class="about fade-in">
+    <h2>Overview</h2>
+    <p>
+      This lab provides hands-on experience with identity federation standards. You will explore <strong>SAML, OAuth 2.0, OpenID Connect (OIDC), and SCIM</strong> 
+      through real-world federation scenarios. Walkthroughs simulate real-world tasks IAM engineers encounter when connecting directories, identity providers, and SaaS applications.
+    </p>
+  </section>
+
+  <!-- What This Covers -->
+  <section class="skills fade-in">
+    <h2>📚 What This Covers</h2>
+    <div class="skills-grid">
+      <div class="card">Identity Provider (IdP) and Service Provider (SP) trust relationships</div>
+      <div class="card">Authentication flows with SAML and OIDC</div>
+      <div class="card">Authorization delegation using OAuth 2.0</div>
+      <div class="card">Automated provisioning and deprovisioning with SCIM</div>
+      <div class="card">Capturing and analyzing tokens, assertions, and claims</div>
+    </div>
+  </section>
+
+  <!-- Lab Sections -->
+  <section class="projects fade-in">
+    <h2>📁 Lab Sections</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>SAML Essentials</h3>
+        <p>Explore IdP vs. SP roles, exchange metadata, and capture a SAML assertion during login.</p>
+        <a href="./saml-essentials.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>OAuth 2.0 & OIDC</h3>
+        <p>Run OAuth flows, extend them with OIDC, request ID tokens, and decode JWT claims.</p>
+        <a href="./oauth-oidc.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>SCIM Provisioning</h3>
+        <p>Automate account provisioning/deprovisioning using SCIM APIs and attribute mappings.</p>
+        <a href="./scim-overview.md" target="_blank">View Walkthrough</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Used -->
+  <section class="tools fade-in">
+    <h2>🛠 Tools Used</h2>
+    <div class="tools-grid">
+      <div class="card">SAML-tracer browser extension (capture SAML assertions)</div>
+      <div class="card">Postman (OAuth, OIDC, and SCIM API calls)</div>
+      <div class="card">JWT.io (decode and analyze JWTs)</div>
+      <div class="card">Demo identity platforms (Okta dev tenant, Microsoft Entra ID, samltest.id)</div>
+    </div>
+  </section>
+
+  <!-- Related Labs -->
+  <section class="about fade-in">
+    <h2>🔗 Related Labs</h2>
+    <p>
+      <a href="../okta/README.md">Okta IAM Lab</a> – Implements SAML, OIDC, and SCIM with a cloud IdP<br>
+      <a href="../entra/README.md">Microsoft Entra ID Lab</a> – Cloud identity provisioning, hybrid sync, and Conditional Access<br>
+      <a href="../activedirectory/README.md">Active Directory Lab</a> – On-premises identity foundation with domains, OUs, and protocols
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="contact fade-in">
+    <h2>Contact</h2>
+    <ul>
+      <li><a href="mailto:dolivernetwork@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/cleveland-oliver-iamsecurity/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/ColiverSEC" target="_blank">GitHub</a></li>
+    </ul>
+  </footer>
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>

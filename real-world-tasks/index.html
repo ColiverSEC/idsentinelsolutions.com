@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-World Tasks Lab | ID Sentinel Solutions</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="real-world.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <ul id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../#projects">Labs</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#skills">Skills</a></li>
+        <li><a href="../#contact">Contact</a></li>
+        <li><a href="Cleveland_Oliver_IAM_Security_Engineer (1).pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <button id="theme-toggle">🌙</button>
+      <button class="hamburger" id="hamburger-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero fade-in">
+    <img src="../logo.PNG" alt="ID Sentinel Solutions Logo" class="hero-logo">
+    <h1>Real-World Tasks Lab</h1>
+    <p class="hero-subtitle">Scenario-Based Enterprise IAM Workflows</p>
+    <a href="#real-world-content" class="scroll-down">&#x2193;</a>
+  </header>
+
+<main id="real-world-content">
+  <!-- Breadcrumb / Back link -->
+  <div class="breadcrumb">
+    <p><a href="../README.md">⬅ Back to Enterprise IAM Lab Overview</a></p>
+  </div>
+
+  <!-- Overview -->
+  <section id="overview" class="about fade-in">
+    <h2>Overview</h2>
+    <p>
+      This module provides <strong>hands-on, scenario-based exercises</strong> that simulate real enterprise IAM challenges. 
+      It integrates tools and concepts from Active Directory, Microsoft Entra ID, Okta, Secure Access Controls, Federation Protocols, 
+      and Automation modules into <strong>practical workflows</strong> for real-world IAM operations.
+    </p>
+  </section>
+
+  <!-- What This Covers -->
+  <section class="skills fade-in">
+    <h2>📚 What This Covers</h2>
+    <div class="skills-grid">
+      <div class="card">End-to-end user onboarding, role changes, and offboarding</div>
+      <div class="card">Privileged access management (PIM/PAM) and RBAC enforcement</div>
+      <div class="card">Cross-platform SSO and MFA troubleshooting</div>
+      <div class="card">Conditional Access and policy validation</div>
+      <div class="card">Compliance reporting and access attestation</div>
+      <div class="card">Automation-driven lifecycle tasks</div>
+    </div>
+  </section>
+
+  <!-- Lab Sections -->
+  <section class="projects fade-in">
+    <h2>📁 Lab Sections</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>New Employee Onboarding</h3>
+        <p>Provision accounts in AD, Entra, and Okta; apply MFA, conditional access, and group memberships; notify managers via automation workflows.</p>
+        <a href="./onboarding.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Employee Role Change / Department Transfer</h3>
+        <p>Update RBAC roles and group memberships; trigger JIT access; remove unneeded entitlements and adjust MFA policies.</p>
+        <a href="./role-change.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Offboarding / Leaver Scenario</h3>
+        <p>Disable AD account, revoke Entra licenses, and deprovision Okta access; trigger compliance notifications; remove privileged roles.</p>
+        <a href="./offboarding.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Privileged Access Audit & Attestation</h3>
+        <p>Generate reports on privileged accounts; perform access reviews; remediate over-privileged or inactive accounts.</p>
+        <a href="./privileged-access-audit.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>SSO & Federation Troubleshooting</h3>
+        <p>Simulate failed SAML or OIDC logins; troubleshoot federation, group assignment, and conditional access issues; resolve and document.</p>
+        <a href="./sso-troubleshoot.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Automation-Driven Reporting</h3>
+        <p>Build scripts and workflows to report inactive accounts, MFA status, license usage, and access reviews; automate notifications.</p>
+        <a href="./automation-reporting.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Hybrid Environment Scenario</h3>
+        <p>Ensure consistent access, SSO, and MFA across on-prem AD and Entra ID; validate group memberships, licensing, and conditional access policies.</p>
+        <a href="./hybrid-scenario.md" target="_blank">View Walkthrough</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Used -->
+  <section class="tools fade-in">
+    <h2>🛠 Tools Used</h2>
+    <div class="tools-grid">
+      <div class="card">Active Directory (ADUC, GPMC, PowerShell)</div>
+      <div class="card">Microsoft Entra ID (Admin Center, PowerShell, Graph API)</div>
+      <div class="card">Okta Identity Cloud (Admin Console, Workflows)</div>
+      <div class="card">Conditional Access / MFA Policies</div>
+      <div class="card">PIM / PAM Tools</div>
+      <div class="card">PowerShell & Task Scheduler / CRON</div>
+    </div>
+  </section>
+
+  <!-- Related Labs -->
+  <section class="about fade-in">
+    <h2>🔗 Related Labs</h2>
+    <p>
+      <a href="../active-directory/README.md">Active Directory Lab</a> – On-premises user and group management, RBAC, AD security<br>
+      <a href="../entra/README.md">Microsoft Entra ID Lab</a> – Cloud identity, licensing, MFA, and Conditional Access<br>
+      <a href="../okta/README.md">Okta Lab</a> – App integration, MFA enforcement, lifecycle automation<br>
+      <a href="../secure-access/README.md">Secure Access Controls Lab</a> – PIM/PAM, RBAC, and access governance<br>
+      <a href="../automation/README.md">Automation Lab</a> – Cross-platform scripts and workflows for lifecycle automation
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="contact fade-in">
+    <h2>Contact</h2>
+    <ul>
+      <li><a href="mailto:dolivernetwork@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/cleveland-oliver-iamsecurity/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/ColiverSEC" target="_blank">GitHub</a></li>
+    </ul>
+  </footer>
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>

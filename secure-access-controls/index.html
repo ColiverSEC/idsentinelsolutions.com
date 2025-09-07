@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Access Controls Lab | ID Sentinel Solutions</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="secure.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <ul id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../#projects">Labs</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#skills">Skills</a></li>
+        <li><a href="../#contact">Contact</a></li>
+        <li><a href="Cleveland_Oliver_IAM_Security_Engineer (1).pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <button id="theme-toggle">🌙</button>
+      <button class="hamburger" id="hamburger-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero fade-in">
+    <img src="../logo.PNG" alt="ID Sentinel Solutions Logo" class="hero-logo">
+    <h1>Secure Access Controls Lab</h1>
+    <p class="hero-subtitle">RBAC | MFA | Conditional Access | PIM/PAM</p>
+    <a href="#secure-access-content" class="scroll-down">&#x2193;</a>
+  </header>
+
+<main id="secure-access-content">
+  <!-- Breadcrumb / Back link -->
+  <div class="breadcrumb">
+    <p><a href="../README.md">⬅ Back to Enterprise IAM Lab Overview</a></p>
+  </div>
+
+  <!-- Overview -->
+  <section id="overview" class="about fade-in">
+    <h2>Overview</h2>
+    <p>
+      This lab provides <strong>hands-on experience</strong> with designing and enforcing secure access controls across enterprise identity platforms. 
+      It focuses on principles such as Multi-Factor Authentication (MFA), Role-Based Access Control (RBAC), Conditional Access, and Privileged Identity/Access Management (PIM/PAM).  
+      The goal is to simulate <strong>real-world enterprise security controls</strong> that apply consistently across <strong>Microsoft Entra ID, Okta, and Active Directory</strong> environments.
+    </p>
+  </section>
+
+  <!-- What This Covers -->
+  <section class="skills fade-in">
+    <h2>📚 What This Covers</h2>
+    <div class="skills-grid">
+      <div class="card">Role-Based Access Control (RBAC) to enforce least privilege across platforms</div>
+      <div class="card">Multi-Factor Authentication (MFA) enforcement and step-up authentication</div>
+      <div class="card">Conditional Access policy design for geo-blocking, device compliance, and session control</div>
+      <div class="card">Privileged Identity & Access Management (PIM/PAM) for elevated accounts</div>
+      <div class="card">Periodic access reviews and attestation processes for compliance</div>
+    </div>
+  </section>
+
+  <!-- Lab Sections -->
+  <section class="projects fade-in">
+    <h2>📁 Lab Sections</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Role-Based Access Control (RBAC)</h3>
+        <p>Define roles, map job functions to entitlements, and enforce least privilege across platforms.</p>
+        <a href="./rbac.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Multi-Factor Authentication (MFA) Enforcement</h3>
+        <p>Compare MFA enforcement strategies across Entra, Okta, and on-prem AD; simulate step-up authentication.</p>
+        <a href="./mfa.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Conditional Access Policies</h3>
+        <p>Design cross-platform policies (Entra vs. Okta) for geo-blocking, device compliance, and session restrictions.</p>
+        <a href="./conditional-access.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Privileged Identity & Access Management (PIM/PAM)</h3>
+        <p>Secure elevated accounts with just-in-time access, step-up MFA, and time-bound admin roles.</p>
+        <a href="./pim-pam.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Access Reviews & Attestations</h3>
+        <p>Simulate periodic certifications where managers and compliance officers validate user access rights.</p>
+        <a href="./access-reviews.md" target="_blank">View Walkthrough</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Used -->
+  <section class="tools fade-in">
+    <h2>🛠 Tools Used</h2>
+    <div class="tools-grid">
+      <div class="card">Microsoft Entra ID (PIM, Conditional Access, role assignments)</div>
+      <div class="card">Okta Identity Cloud (app-based access policies, admin roles, MFA)</div>
+      <div class="card">Active Directory (on-prem privileged groups, delegation, smart card MFA)</div>
+      <div class="card">Azure AD Connect (hybrid identity context)</div>
+      <div class="card">PowerShell (reporting on role membership, privileged accounts, access reviews)</div>
+      <div class="card">Okta Workflows (automating access attestation and notifications)</div>
+    </div>
+  </section>
+
+  <!-- Related Labs -->
+  <section class="about fade-in">
+    <h2>🔗 Related Labs</h2>
+    <p>
+      <a href="../entra/README.md">Microsoft Entra ID</a> – Cloud identity provisioning, license assignment, Conditional Access enforcement<br>
+      <a href="../okta/README.md">Okta</a> – Application integrations, MFA policies, lifecycle automation<br>
+      <a href="../activedirectory/README.md">Active Directory (On-Prem)</a> – OU structure, delegated access, PowerShell automation<br>
+      <a href="../federation-protocols/README.md">Federation Protocols</a> – Authentication flows with SAML, OAuth, and OIDC
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="contact fade-in">
+    <h2>Contact</h2>
+    <ul>
+      <li><a href="mailto:dolivernetwork@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/cleveland-oliver-iamsecurity/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/ColiverSEC" target="_blank">GitHub</a></li>
+    </ul>
+  </footer>
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>

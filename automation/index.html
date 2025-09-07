@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automation Module | ID Sentinel Solutions</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="automation.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <ul id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../#projects">Labs</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#skills">Skills</a></li>
+        <li><a href="../#contact">Contact</a></li>
+        <li><a href="Cleveland_Oliver_IAM_Security_Engineer (1).pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <button id="theme-toggle">🌙</button>
+      <button class="hamburger" id="hamburger-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero fade-in">
+    <img src="../logo.PNG" alt="ID Sentinel Solutions Logo" class="hero-logo">
+    <h1>Automation Module</h1>
+    <p class="hero-subtitle">Cross-Platform IAM Orchestration & Lifecycle Automation</p>
+    <a href="#automation-content" class="scroll-down">&#x2193;</a>
+  </header>
+
+<main id="automation-content">
+  <!-- Breadcrumb / Back link -->
+  <div class="breadcrumb">
+    <p><a href="../README.md">⬅ Back to Enterprise IAM Lab Overview</a></p>
+  </div>
+
+  <!-- Overview -->
+  <section id="overview" class="about fade-in">
+    <h2>Overview</h2>
+    <p>
+      This module provides <strong>hands-on experience with cross-platform IAM automation</strong>. 
+      It demonstrates how automation can orchestrate identity lifecycle tasks across multiple systems including 
+      <strong>Active Directory, Microsoft Entra ID, and Okta</strong>.  
+      Key focus areas include provisioning, deprovisioning, lifecycle workflows, compliance reporting, self-service automation, and logging/error handling.
+    </p>
+  </section>
+
+  <!-- What This Covers -->
+  <section class="skills fade-in">
+    <h2>📚 What This Covers</h2>
+    <div class="skills-grid">
+      <div class="card">Cross-platform provisioning & deprovisioning</div>
+      <div class="card">Joiner / Mover / Leaver lifecycle automation</div>
+      <div class="card">Compliance reporting & certifications</div>
+      <div class="card">Self-service & helpdesk automation</div>
+      <div class="card">Orchestration across AD, Entra ID, and Okta</div>
+      <div class="card">Logging, error handling, and governance</div>
+    </div>
+  </section>
+
+  <!-- Lab Sections -->
+  <section class="projects fade-in">
+    <h2>📁 Lab Sections</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Cross-Platform Provisioning</h3>
+        <p>Automate account creation and updates across AD, Entra ID, and Okta with a single script/workflow.</p>
+        <a href="./cross-platform-provisioning.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Joiner / Mover / Leaver Flows</h3>
+        <p>End-to-end automation for onboarding, role changes, and deprovisioning with approvals.</p>
+        <a href="./jml-automation.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Compliance & Access Reviews</h3>
+        <p>Scheduled reporting on inactive accounts, privileged roles, and MFA status.</p>
+        <a href="./compliance-automation.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Helpdesk & Self-Service Tools</h3>
+        <p>Build PowerShell utilities and Okta Workflows for password resets, MFA re-enrollment, and group requests.</p>
+        <a href="./helpdesk-tools.md" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Orchestration Across Platforms</h3>
+        <p>Use scripts and workflows together to connect AD events with Okta and Entra automation.</p>
+        <a href="./orchestration.md" target="_blank">View Walkthrough</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Used -->
+  <section class="tools fade-in">
+    <h2>🛠 Tools Used</h2>
+    <div class="tools-grid">
+      <div class="card">PowerShell</div>
+      <div class="card">Okta Workflows</div>
+      <div class="card">Microsoft Graph API</div>
+      <div class="card">Active Directory PowerShell Module</div>
+      <div class="card">Task Scheduler / CRON</div>
+    </div>
+  </section>
+
+  <!-- Related Labs -->
+  <section class="about fade-in">
+    <h2>🔗 Related Labs</h2>
+    <p>
+      <a href="../active-directory/README.md">Active Directory Lab</a> – On-prem automation with AD PowerShell cmdlets<br>
+      <a href="../entra/README.md">Microsoft Entra ID Lab</a> – Cloud identity automation using Graph API & PowerShell<br>
+      <a href="../okta/README.md">Okta Lab</a> – Lifecycle automation and workflows within Okta<br>
+      <a href="../secure-access/README.md">Secure Access Controls Lab</a> – Access governance with RBAC, PIM/PAM, and Conditional Access
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="contact fade-in">
+    <h2>Contact</h2>
+    <ul>
+      <li><a href="mailto:dolivernetwork@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/cleveland-oliver-iamsecurity/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/ColiverSEC" target="_blank">GitHub</a></li>
+    </ul>
+  </footer>
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>
