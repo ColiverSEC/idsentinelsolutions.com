@@ -18,6 +18,18 @@
   text-decoration: underline;
 }
 
+/* Make all tool/skill cards equal size */
+.skills-grid .card,
+.tools-grid .card {
+  flex: 1 1 250px;       /* flexible width, minimum 250px */
+  max-width: 300px;      /* keeps them uniform */
+  min-height: 200px;     /* ensures equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers content vertically */
+  align-items: center;     /* centers content horizontally */
+}
+
 /* Cards for sections */
 .skills-grid, .tools-grid, .projects .grid {
   display: flex;

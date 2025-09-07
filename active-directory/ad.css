@@ -18,6 +18,18 @@
   text-decoration: underline;
 }
 
+/* Make all tool/skill cards equal size */
+.skills-grid .card,
+.tools-grid .card {
+  flex: 1 1 250px;       /* flexible width, minimum 250px */
+  max-width: 300px;      /* keeps them uniform */
+  min-height: 200px;     /* ensures equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers content vertically */
+  align-items: center;     /* centers content horizontally */
+}
+
 /* Cards for sections */
 .skills-grid, .tools-grid {
   display: flex;
@@ -39,6 +51,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+/* Lab Section Cards - Center Content */
+.projects .grid .card {
+  flex: 1 1 250px;        /* flexible width with minimum */
+  max-width: 300px;
+  min-height: 200px;      /* keeps them consistent height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center vertically */
+  align-items: center;     /* center horizontally */
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
 /* Fade-in Animation */
@@ -140,4 +168,52 @@ body.dark .projects .card a:hover,
 body.dark .about a:hover,
 body.dark .contact a:hover {
   color: #3b82f6; /* darker blue on hover */
+}
+
+/* ------------------------- */
+/* FORCE: Dark-mode card styles (place at end of CSS) */
+/* ------------------------- */
+
+/* Ensure project / walkthrough / tools / skills cards use dark background and readable text */
+body.dark .projects .grid .card,
+body.dark .projects .card,
+body.dark .skills-grid .card,
+body.dark .tools-grid .card {
+  background-color: #1f2937 !important; /* dark card background */
+  color: #f9fafb !important;            /* light text */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+}
+
+/* Make sure any nested elements inherit readable colors (links, paragraphs) */
+body.dark .projects .grid .card a,
+body.dark .projects .card a,
+body.dark .skills-grid .card a,
+body.dark .tools-grid .card a {
+  color: #60a5fa !important;
+  text-decoration: none;
+}
+
+body.dark .projects .grid .card a:hover,
+body.dark .projects .card a:hover,
+body.dark .skills-grid .card a:hover,
+body.dark .tools-grid .card a:hover {
+  color: #3b82f6 !important;
+}
+
+/* Defensive: images or other elements shouldn't force white backgrounds */
+body.dark .projects .grid .card img,
+body.dark .skills-grid .card img,
+body.dark .tools-grid .card img {
+  background: transparent !important;
+}
+
+/* Keep card content vertically centered and consistent height */
+body.dark .projects .grid .card,
+body.dark .skills-grid .card,
+body.dark .tools-grid .card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 200px !important;  /* adjust if you want taller cards */
 }
