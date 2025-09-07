@@ -1,0 +1,194 @@
+/* -------------------------------------------------- */
+/* Microsoft Purview DLP Lab Page Custom Styles */
+/* -------------------------------------------------- */
+
+/* Breadcrumb */
+.breadcrumb {
+  text-align: center;
+  margin: 1.5rem 0 3rem 0;
+  font-size: 0.95rem;
+}
+
+.breadcrumb a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Cards for sections */
+.skills-grid, .tools-grid, .projects .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center all cards horizontally */
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.skills-grid .card, 
+.tools-grid .card, 
+.projects .grid .card {
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects .grid .card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.projects .grid .card p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.projects .grid .card a {
+  text-decoration: none;
+  color: #4f46e5;
+}
+
+.projects .grid .card a:hover {
+  text-decoration: underline;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Headings */
+.skills h2, .tools h2, .projects h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Optional: spacing between cards and sections */
+.skills, .tools, .projects {
+  margin-bottom: 3rem;
+}
+
+/* Related Labs & Next Steps */
+.about {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about ul {
+  list-style: disc;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.about a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.about a:hover {
+  text-decoration: underline;
+}
+
+/* Overview Section */
+.about#overview {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 800px;
+  padding: 2rem 1.5rem;
+  background: #f3f4f6;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color: #374151;
+}
+
+.about#overview h2 {
+  margin-bottom: 1rem;
+}
+
+.about#overview p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.about#overview a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.about#overview a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode for Overview */
+body.dark .about#overview {
+  background: #1f2937;
+  color: #f9fafb;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+body.dark .about#overview a {
+  color: #60a5fa;
+}
+
+/* Dark Mode for Cards */
+body.dark .projects .grid .card,
+body.dark .skills-grid .card,
+body.dark .tools-grid .card {
+  background-color: #1f2937;
+  color: #f9fafb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+body.dark .projects .grid .card a,
+body.dark .skills-grid .card a,
+body.dark .tools-grid .card a {
+  color: #60a5fa;
+}
+
+body.dark .projects .grid .card a:hover,
+body.dark .skills-grid .card a:hover,
+body.dark .tools-grid .card a:hover {
+  color: #3b82f6;
+}
+
+/* Dark mode links for all sections */
+body.dark .breadcrumb a,
+body.dark .projects .card a,
+body.dark .about a,
+body.dark .contact a {
+  color: #60a5fa; /* lighter blue for readability */
+}
+
+body.dark .breadcrumb a:hover,
+body.dark .projects .card a:hover,
+body.dark .about a:hover,
+body.dark .contact a:hover {
+  color: #3b82f6; /* darker blue on hover */
+}

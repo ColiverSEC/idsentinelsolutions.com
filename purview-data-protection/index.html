@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft Purview DLP Lab | Microsoft 365 Security & Compliance</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="purview.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <ul id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../#projects">Labs</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#skills">Skills</a></li>
+        <li><a href="../#contact">Contact</a></li>
+        <li><a href="Cleveland_Oliver_IAM_Security_Engineer (1).pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <button id="theme-toggle">🌙</button>
+      <button class="hamburger" id="hamburger-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero fade-in">
+    <img src="../logo.PNG" alt="ID Sentinel Solutions Logo" class="hero-logo">
+    <h1>Microsoft Purview Data Loss Prevention Lab</h1>
+    <p class="hero-subtitle">Hands-On Microsoft 365 Compliance & Security Tasks</p>
+    <a href="#dlp-content" class="scroll-down">&#x2193;</a>
+  </header>
+
+<main id="dlp-content">
+  <!-- Breadcrumb / Back link -->
+  <div class="breadcrumb">
+    <p><a href="../README.md">⬅ Back to Microsoft 365 Security & Compliance Lab Overview</a></p>
+  </div>
+
+  <!-- Overview -->
+  <section id="overview" class="about fade-in">
+    <h2>Overview</h2>
+    <p>
+      This lab provides hands-on experience with <strong>Microsoft Purview DLP</strong>, a Microsoft 365 compliance and data protection tool.
+      It focuses on creating sensitivity labels, deploying DLP policies, testing email scenarios, reviewing alerts, and verifying audit logs.  
+      Walkthroughs simulate <strong>real-world Microsoft 365 security and compliance tasks</strong> that IT and security engineers perform daily.
+    </p>
+  </section>
+
+  <!-- What This Covers -->
+  <section class="skills fade-in">
+    <h2>📚 What This Covers</h2>
+    <div class="skills-grid">
+      <div class="card">Creating and publishing Sensitivity Labels for PHI, PII, and other sensitive data</div>
+      <div class="card">Deploying DLP policies to detect and block sensitive content in transit</div>
+      <div class="card">Testing policies with emails containing sensitive information</div>
+      <div class="card">Reviewing alerts and incidents in Purview and Defender for Cloud Apps</div>
+      <div class="card">Verifying audit logs for compliance reporting</div>
+    </div>
+  </section>
+
+  <!-- Lab Sections -->
+  <section class="projects fade-in">
+    <h2>📁 Lab Walkthroughs</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Creating Sensitivity Labels</h3>
+        <p>Step-by-step instructions to create parent and sublabels, define classifications, and publish labels to users.</p>
+        <a href="./docs/dlp-walkthrough.md#creating-sensitivity-labels" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Deploying DLP Policies</h3>
+        <p>Configure DLP policies, define rules and actions, enable policy mode, and manage policy scope.</p>
+        <a href="./docs/dlp-walkthrough.md#deploying-dlp-policies" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Testing Policies with Emails</h3>
+        <p>Send test emails containing sensitive data to validate DLP policy enforcement.</p>
+        <a href="./docs/dlp-walkthrough.md#testing-policies-with-emails" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Reviewing Alerts</h3>
+        <p>Monitor policy triggers, view alerts and incidents in Purview and Defender for Cloud Apps.</p>
+        <a href="./docs/dlp-walkthrough.md#reviewing-alerts" target="_blank">View Walkthrough</a>
+      </div>
+
+      <div class="card">
+        <h3>Verifying Audit Logs</h3>
+        <p>Check audit logs for DLP events and verify compliance reporting.</p>
+        <a href="./docs/dlp-walkthrough.md#verifying-audit-logs" target="_blank">View Walkthrough</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Used -->
+  <section class="tools fade-in">
+    <h2>🛠 Tools Used</h2>
+    <div class="tools-grid">
+      <div class="card">Microsoft Purview Compliance Portal</div>
+      <div class="card">Microsoft Defender for Cloud Apps</div>
+      <div class="card">Microsoft 365 Admin Center</div>
+      <div class="card">Exchange Online (Mail Flow)</div>
+    </div>
+  </section>
+
+  <!-- Related Labs -->
+  <section class="about fade-in">
+    <h2>🔗 Related Labs</h2>
+    <p>
+      <a href="../README.md">Microsoft 365 Security & Compliance Overview</a> – Core Microsoft 365 compliance and security setup, including Purview and Defender integration<br>
+      <a href="https://github.com/ColiverSEC/Enterprise-IAM-Lab/tree/main/okta">Okta IAM Lab</a> – Application integrations, MFA policies, lifecycle automation for identities<br>
+      <a href="../entra/README.md">Hybrid Identity Lab</a> – Connect on-prem AD with Microsoft Entra ID for identity sync and federation
+    </p>
+  </section>
+
+  <!-- Next Steps -->
+  <section class="about fade-in">
+    <h2>💡 Next Steps</h2>
+    <ul>
+      <li>Expand DLP testing to <strong>SharePoint and OneDrive</strong></li>
+      <li>Automate DLP policy deployment with <strong>Microsoft Graph or PowerShell</strong></li>
+      <li>Integrate additional <strong>sensitivity labels</strong> and <strong>auto-labeling policies</strong></li>
+      <li>Monitor alerts and maintain compliance using <strong>audit logs</strong></li>
+      <li>Explore advanced DLP <strong>policy tuning</strong> and <strong>user education</strong> to reduce false positives</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="contact fade-in">
+    <h2>Contact</h2>
+    <ul>
+      <li><a href="mailto:dolivernetwork@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/cleveland-oliver-iamsecurity/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/ColiverSEC" target="_blank">GitHub</a></li>
+    </ul>
+  </footer>
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>
