@@ -156,7 +156,7 @@ body.dark .hamburger:hover {
   .hamburger {
     display: flex;
     position: fixed;
-    top: 12px;          /* move it down into the nav bar */
+    top: 12px;
     left: 15px;
     font-size: 1.2rem;
     padding: 0.4rem 1rem;
@@ -168,56 +168,84 @@ body.dark .hamburger:hover {
     align-items: center;
     justify-content: center;
     border: none;
+    transition: background 0.3s;
   }
 
   .hamburger:hover {
     background: #2563eb;
   }
 
-  /* Dark mode toggle button on mobile only */
+  /* Dark mode toggle button on mobile */
   #theme-toggle {
-    top: 12px;          /* same vertical alignment as hamburger */
-    right: 15px;        /* keep distance from right edge */
-  }
-
-  .nav-left ul {
-    display: none;
+    top: 12px;
+    right: 15px;
     position: fixed;
-    top: 50px;          /* keep below nav */
-    left: 0;
-    flex-direction: column;
-    background: #fff;
-    padding: 1rem;
-    border-radius: 0 0 8px 8px;
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    z-index: 2000;
   }
 
-  .nav-left ul.show {
-    display: flex;
-  }
-  .nav-left ul li {
-    margin-bottom: 0.30rem; /* adjust value for more or less space */
-  }
+/* Mobile nav menu */
+.nav-left ul {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 0 1rem;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  z-index: 2000;
 
-  .nav-left ul li:last-child {
-    margin-bottom: 0; /* prevents extra gap at bottom */
-  }
+  /* Smooth animation */
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease, background 0.3s;
 }
 
- /* ← ADD THE DARK MODE RULES HERE */
-  body.dark .nav-left ul {
-    background: #1f2937;
-  }
+/* Open state */
+.nav-left ul.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+  padding: 1rem;
+}
 
-  body.dark .nav-left ul li a {
-    background: #3b82f6;
-    color: #fff;
-  }
+/* Individual items spacing & initial state for stagger */
+.nav-left ul li {
+  margin-bottom: 0.3rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
-  body.dark .nav-left ul li a:hover {
-    background: #2563eb;
+.nav-left ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Staggered animation when menu opens */
+.nav-left ul.show li:nth-child(1) { transition-delay: 0.05s; opacity: 1; transform: translateY(0); }
+.nav-left ul.show li:nth-child(2) { transition-delay: 0.1s; opacity: 1; transform: translateY(0); }
+.nav-left ul.show li:nth-child(3) { transition-delay: 0.15s; opacity: 1; transform: translateY(0); }
+.nav-left ul.show li:nth-child(4) { transition-delay: 0.2s; opacity: 1; transform: translateY(0); }
+.nav-left ul.show li:nth-child(5) { transition-delay: 0.25s; opacity: 1; transform: translateY(0); }
+.nav-left ul.show li:nth-child(6) { transition-delay: 0.3s; opacity: 1; transform: translateY(0); }
+
+/* Dark mode adjustments */
+body.dark .nav-left ul {
+  background: #1f2937;
+}
+
+body.dark .nav-left ul li a {
+  background: #3b82f6;
+  color: #fff;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark .nav-left ul li a:hover {
+  background: #2563eb;
+}
+
   }
 
   /* Dark mode: featured labs links */

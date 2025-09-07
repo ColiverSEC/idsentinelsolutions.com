@@ -34,7 +34,32 @@
     <!-- scroll arrow -->
     <a href="#federation-content" class="scroll-down">&#x2193;</a>
   </header>
+<!-- JavaScript -->
+<script>
+  // Hamburger toggle
+  const hamburger = document.getElementById('hamburger-btn');
+  const navLinks = document.getElementById('nav-links');
 
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+
+  // Collapse mobile menu after clicking a link
+  document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+    });
+  });
+
+  // Dark mode toggle
+  const themeToggle = document.getElementById('theme-toggle');
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+  });
+</script>
+
+</body>
+</html>
 <main id="federation-content">
   <!-- Breadcrumb / Back link -->
   <div class="breadcrumb">
