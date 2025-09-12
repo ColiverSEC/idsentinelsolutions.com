@@ -1,0 +1,4 @@
+cd ~/Documents/idsentinelsolutions.com
+git add .
+git commit -m "Describe what you changed"
+git push origin main
