@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentication Callback</title>
+  <link rel="stylesheet" href="/style.css"> <!-- link to your main CSS -->
+  <style>
+    /* Extra styling specific to this page */
+    body {
+      background-color: #121212;
+      color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #00bcd4;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #cccccc;
+      max-width: 600px;
+    }
+
+    .params-box {
+      margin-top: 25px;
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 15px;
+      width: 90%;
+      max-width: 600px;
+      text-align: left;
+      font-family: monospace;
+      word-wrap: break-word;
+      overflow-x: auto;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #00bcd4;
+      color: #121212;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .back-link:hover {
+      background-color: #0097a7;
+    }
+  </style>
+</head>
+<body>
+  <h1>Authentication Callback</h1>
+  <p>This page is used as a redirect URI for Microsoft Entra / OAuth demos.<br>
+  Any parameters returned from the identity provider are displayed below.</p>
+
+  <div class="params-box" id="paramsBox">
+    <em>No parameters detected.</em>
+  </div>
+
+  <a href="/" class="back-link">Back to Home</a>
+
+  <script>
+    // Show URL parameters (query string or hash) for demo purposes
+    const paramsBox = document.getElementById('paramsBox');
+    const query = window.location.search;
+    const hash = window.location.hash;
+    let output = '';
+
+    if (query || hash) {
+      output += query ? 'Query string:\n' + decodeURIComponent(query) + '\n\n' : '';
+      output += hash ? 'Hash fragment:\n' + decodeURIComponent(hash) : '';
+      paramsBox.textContent = output;
+    }
+  </script>
+</body>
+</html>
