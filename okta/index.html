@@ -17,7 +17,7 @@
       <li><a href="/#about">👤 About</a></li>
       <li><a href="/#skills">💡 Skills</a></li>
       <li><a href="/#contact">✉️ Contact</a></li>
-      <li><a href="/Cleveland_Oliver_Azure_IAM_Engineer.pdf" target="_blank">📃 Resume</a></li>
+      <li><a href="/Cleveland_Oliver_IAM_Engineer.pdf" target="_blank">📃 Resume</a></li>
     </ul>
   </div>
     <div class="nav-right">
@@ -70,9 +70,10 @@
   <section id="overview" class="about fade-in">
     <h2>📖 Overview</h2>
     <p>
-      This module covers identity and access management using <strong>Okta</strong>, a leading cloud identity provider. 
-      It provides hands-on guidance to integrate applications with Okta via SAML and OIDC, configure Multi-Factor Authentication (MFA) policies, 
-      and automate user lifecycle management including provisioning and deprovisioning.
+    This module covers identity and access management using Okta, a leading cloud identity provider.
+    It provides hands-on guidance for integrating applications with Okta via SAML and OIDC, 
+    configuring Multi-Factor Authentication (MFA) policies, automating user lifecycle tasks including provisioning and deprovisioning, 
+    mapping user attributes, troubleshooting access issues, and monitoring Okta System Logs.
     </p>
   </section>
 
@@ -82,19 +83,19 @@
   <div class="skills-grid">
     <div class="card">
       <h3>🌐 Application Integration</h3>
-      <p>Integrate applications with Okta using SAML 2.0 and OpenID Connect (OIDC) for secure authentication.</p>
+      <p>Integrate applications using SAML and OIDC, set up SSO, and enable JIT provisioning through the Okta Integration Network.</p>
     </div>
     <div class="card">
-      <h3>🔑 Single Sign-On & JIT Provisioning</h3>
-      <p>Configure SSO and Just-in-Time provisioning for streamlined user access.</p>
+      <h3>🔑 User Lifecycle & Provisioning</h3>
+      <p>Automate user lifecycle tasks: create/manage users, configure custom attributes, assign admin roles, manage group memberships, and synchronize attributes with integrated apps.</p>
     </div>
     <div class="card">
       <h3>🛡️ Multi-Factor Authentication (MFA)</h3>
-      <p>Enable and enforce MFA with custom policies to enhance account security.</p>
+      <p>Enforce MFA using authenticators, authentication/session policies, and support secure password/self-service recovery.</p>
     </div>
     <div class="card">
-      <h3>⚙️ Lifecycle Automation</h3>
-      <p>Automate user provisioning, deactivation, and workflow processes efficiently.</p>
+      <h3>⚙️ Access Troubleshooting & System Monitoring</h3>
+      <p>Investigate login issues, app access problems, session expirations, and analyze Okta System Log events while leveraging Okta support resources.</p>
     </div>
   </div>
 </section>
@@ -105,21 +106,39 @@
     <h2>📁 Lab Sections</h2>
     <div class="grid">
       <div class="card">
-        <h3>App Integration</h3>
-        <p>Add and configure apps in Okta. Set up SAML or OIDC connections, assign users/groups, and test seamless SSO.</p>
-        <a href="./app-integration.md" target="_blank">View Walkthrough</a>
+        <h3>User & Group Management</h3>
+        <p>	Create users, manage custom attributes, assign admin roles, and automate group membership with rules.</p>
+        <a href="./https://github.com/ColiverSEC/Enterprise-IAM-Lab/blob/main/okta/01-user-and-group-management.md" target="_blank">View Walkthrough</a>
       </div>
 
       <div class="card">
-        <h3>MFA Policies</h3>
-        <p>Enable user factor enrollment, create and customize authentication policies, assign policies to users/groups/apps, and verify MFA enforcement.</p>
-        <a href="./mfa-policies.md" target="_blank">View Walkthrough</a>
+        <h3>Application Setup with OIN (SAML/OIDC)</h3>
+        <p>Integrate apps using SAML & OIDC via Okta Integration Network (OIN). Configure provisioning and SSO.</p>
+        <a href="./https://github.com/ColiverSEC/Enterprise-IAM-Lab/blob/main/okta/02-application-integrations.md" target="_blank">View Walkthrough</a>
       </div>
 
       <div class="card">
-        <h3>Lifecycle Management</h3>
-        <p>Enable provisioning/deprovisioning for connected apps, map user attributes, and build Okta Workflows to automate notifications and lifecycle actions.</p>
-        <a href="./lifecycle-management.md" target="_blank">View Walkthrough</a>
+        <h3>App Attribute Mapping & Offboarding</h3>
+        <p>Map user attributes between Okta and an integrated app, and manage user offboarding.</p>
+        <a href="./https://github.com/ColiverSEC/Enterprise-IAM-Lab/blob/main/okta/03-app-attribute-mapping-offboarding.md" target="_blank">View Walkthrough</a>
+      </div>
+
+           <div class="card">
+        <h3>Authentication & MFA Policies</h3>
+        <p>Set up authenticators, enrollment policies, session rules, authentication policies, and password/self-service recovery.</p>
+        <a href="./https://github.com/ColiverSEC/Enterprise-IAM-Lab/blob/main/okta/04-authentication-mfa-policies.md" target="_blank">View Walkthrough</a>
+      </div>
+
+           <div class="card">
+        <h3>Troubleshooting & User Access</h3>
+        <p>Troubleshoot login issues, app access problems, session expirations, and group assignment errors for users in Okta.</p>
+        <a href="./https://github.com/ColiverSEC/Enterprise-IAM-Lab/blob/main/okta/05-troubleshooting.md" target="_blank">View Walkthrough</a>
+      </div>
+
+           <div class="card">
+        <h3>Syslog & Okta Support</h3>
+        <p>Search and filter events in the Okta System Log, and identify resources to get help and support from Okta.</p>
+        <a href="./https://github.com/ColiverSEC/Enterprise-IAM-Lab/blob/main/okta/06-syslog-support.md" target="_blank">View Walkthrough</a>
       </div>
     </div>
   </section>
@@ -140,7 +159,6 @@
     <h2>🔗 Related Labs</h2>
     <p>
       <a href="../entra/README.md">Microsoft Entra ID Lab</a> – Cloud identity and access management with Azure AD<br>
-      <a href="https://github.com/ColiverSEC/AD-Entra-Hybrid-Lab/blob/main/README.md">AD-Entra-Hybrid-Lab</a> – On-premises domain, group management and cloud sync<br>
       <a href="../federation-protocols/README.md">Federation Protocols</a> – Deep dive into SAML, SCIM, OAuth, and OpenID Connect
     </p>
   </section>
@@ -149,7 +167,7 @@
   <footer class="contact fade-in">
     <h2>Contact</h2>
     <ul>
-      <li><a href="mailto:dolivernetwork@gmail.com">Email</a></li>
+      <li><a href="mailto:coliver@idsentinelsolutions.com">Email</a></li>
       <li><a href="https://www.linkedin.com/in/cleveland-oliver-iamsecurity/" target="_blank">LinkedIn</a></li>
       <li><a href="https://github.com/ColiverSEC" target="_blank">GitHub</a></li>
     </ul>
