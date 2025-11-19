@@ -1,5 +1,5 @@
 /* -------------------------------------------------- */
-/* Okta Page Custom Styles */
+/* Federation Page Custom Styles (matches Okta page) */
 /* -------------------------------------------------- */
 
 /* Breadcrumb */
@@ -17,6 +17,7 @@
 .breadcrumb a:hover {
   text-decoration: underline;
 }
+
 /* Make all tool/skill cards equal size */
 .skills-grid .card,
 .tools-grid .card {
@@ -30,22 +31,16 @@
 }
 
 /* Cards for sections */
-.skills-grid, .tools-grid {
+.skills-grid, .tools-grid, .projects .grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
   margin-top: 1rem;
 }
-/* Lab Sections / Walkthroughs Cards */
-.projects .grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* center the cards horizontally */
-  gap: 1.5rem;
-  margin-top: 1rem;
-}
 
+.skills-grid .card, 
+.tools-grid .card, 
 .projects .grid .card {
   background-color: #ffffff;
   padding: 1rem 1.5rem;
@@ -54,14 +49,12 @@
   min-width: 250px;
   max-width: 300px;
   text-align: center;
-  /* Center all content vertically and horizontally */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-/* Lab Section Card Elements */
 .projects .grid .card h3 {
   margin-bottom: 0.5rem;
 }
@@ -80,58 +73,7 @@
   text-decoration: underline;
 }
 
-/* Dark Mode */
-body.dark .projects .grid .card {
-  background-color: #1f2937;
-  color: #f9fafb;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-}
-
-body.dark .projects .grid .card a {
-  color: #60a5fa;
-}
-
-body.dark .projects .grid .card a:hover {
-  color: #3b82f6;
-}
-
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;        /* allows multiple rows on desktop */
-  justify-content: center; /* centers cards horizontally */
-  align-items: flex-start; /* aligns rows consistently */
-  gap: 1.5rem;
-  width: 100%;
-  margin: 0 auto;          /* centers the grid container itself */
-}
-
-.skills-grid .card {
-  flex: 0 1 300px;        /* base width 300px, can shrink but not below 0 */
-  max-width: 400px;       /* grows a bit for large screens */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;      /* centers text inside the card */
-  min-height: 200px;       /* keeps cards visually uniform */
-}
-
-.skills-grid .card, .tools-grid .card {
-  background-color: #ffffff;
-  padding: 1rem 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  min-width: 250px;
-  max-width: 300px;
-  text-align: center;
-  /* Center all content vertically and horizontally */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Fade-in Animation (if not already defined in style.css) */
+/* Fade-in Animation */
 .fade-in {
   opacity: 0;
   animation: fadeIn 1s forwards;
@@ -142,13 +84,13 @@ body.dark .projects .grid .card a:hover {
 }
 
 /* Headings */
-.skills h2, .tools h2 {
+.skills h2, .tools h2, .projects h2 {
   text-align: center;
   margin-bottom: 1rem;
 }
 
 /* Optional: spacing between cards and sections */
-.skills, .tools {
+.skills, .tools, .projects {
   margin-bottom: 3rem;
 }
 
@@ -163,7 +105,7 @@ body.dark .projects .grid .card a:hover {
 }
 
 .about p {
-  max-width: 600px; /* keeps text readable on wide screens */
+  max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
 }
@@ -207,27 +149,47 @@ body.dark .projects .grid .card a:hover {
   text-decoration: underline;
 }
 
-/* Dark Mode for Overview */
+/* Dark Mode for Overview and Cards */
 body.dark .about#overview {
-  background: #1f2937;   /* dark card background */
-  color: #f9fafb;        /* light text color */
+  background: #1f2937;
+  color: #f9fafb;
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 body.dark .about#overview a {
-  color: #60a5fa;        /* links stay visible in dark mode */
+  color: #60a5fa;
 }
-/* Dark mode: all links in Entra Lab page sections */
+/* Dark Mode for Lab Section Cards */
+body.dark .projects .grid .card {
+  background-color: #1f2937;  /* match overview dark card */
+  color: #f9fafb;             /* light text color */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+body.dark .projects .grid .card a {
+  color: #60a5fa;             /* links stay visible in dark mode */
+}
+
+body.dark .projects .grid .card a:hover {
+  color: #3b82f6;
+}
+
+
+/* Dark mode links for all sections */
 body.dark .breadcrumb a,
 body.dark .projects .card a,
+body.dark .skills-grid .card a,
+body.dark .tools-grid .card a,
 body.dark .about a,
 body.dark .contact a {
-  color: #60a5fa; /* lighter blue for readability */
+  color: #60a5fa;
 }
 
 body.dark .breadcrumb a:hover,
 body.dark .projects .card a:hover,
+body.dark .skills-grid .card a:hover,
+body.dark .tools-grid .card a:hover,
 body.dark .about a:hover,
 body.dark .contact a:hover {
-  color: #3b82f6; /* darker blue on hover */
+  color: #3b82f6;
 }
